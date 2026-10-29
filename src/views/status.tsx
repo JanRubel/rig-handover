@@ -24,7 +24,7 @@ export function StatusBoard({ status }: { status: Status }) {
               <a href={`/digest/${n.night}`}>{n.night}</a>
               {n.counts
                 ? ` · ok ${n.counts.ok} · retry ${n.counts.retry} · fail ${n.counts.fail}`
-                : ' · -'}
+                : ' · —'}
             </li>
           ))}
         </ul>
